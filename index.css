@@ -1,0 +1,75 @@
+#canvas{
+    border: 1px solid blue;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:10px
+}
+
+#container{
+    position:relative;
+    background: pink;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+
+#holder{
+    display: flex;
+    flex-direction: row;
+}
+
+#cropframe{
+    position: absolute;
+    top: 0px;
+    left:0px;
+    z-index: 1;
+    resize:both;
+
+    height: 100px;
+    width: 100px;
+    border: 1px solid red;
+    overflow: auto;
+    cursor:grab;
+
+}
+
+#canvas2{
+    position:absolute;
+    width: 500px;
+    height: 500px;
+    top:0;
+    left: 0;
+    border: 1px solid red;
+    z-index: 1;
+    cursor: crosshair;
+}
+
+
+#resizehandle{
+    position: absolute;
+    bottom:0;
+    right: 0;
+    border: 1px solid red ;
+    height: 16px;
+    width: 16px;
+}
+
+body{
+    -webkit-touch-callout: none;
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+}
+
+
+
+
+
